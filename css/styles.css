@@ -1,0 +1,269 @@
+:root {
+    --acent-color: #404BBF;
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: font-family:'Raleway', sans-serif;
+    --primary-text-color: #2E2F42;
+    --secondary-text-color: #434455;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--primary-font)
+}
+
+/*============================= HEADER ====================== */
+
+
+
+.logo {
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--primary-text-color);
+}
+
+.logo-web {
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #4D5AE5;
+}
+
+.menu-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--acent-color);
+}
+
+.mail {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-text-color);
+}
+
+.mail:hover,
+.mail:focus {
+    color: var(--acent-color);
+}
+
+.phone-number {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-text-color);
+}
+
+.phone-number:hover,
+.phone-number:focus {
+    color: var(--acent-color);
+}
+
+/*===================== MEIN =====================*/
+
+/*===================== HERO =====================*/
+
+.hero {
+
+    width: 1440px;
+    left: 0px;
+    top: 72px;
+
+    background: #2E2F42;
+}
+
+.main-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+
+.modal-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+
+    background-color: #4D5AE5;
+    color: #FFFFFF
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: #404BBF;
+    color: #FFFFFF
+}
+
+/* ====================== FEATURES ================= */
+
+.features-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color);
+}
+
+.suptitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-text-color);
+}
+
+/* ======================= PRODUCT ================ */
+
+.suptitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    color: var(--primary-text-color);
+}
+
+.team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--primary-text-color);
+}
+
+.foto-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color);
+}
+
+.shpere {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-text-color);
+}
+
+/* ========= PORTFOLIO ============ */
+
+.filter-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #4D5AE5;
+    background: #F4F4FD;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    background-color: #404BBF;
+    color: #FFFFFF
+}
+
+.nav-title {
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    color: #2E2F42;
+}
+
+.ofers-name {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+
+
+/*=================== FOOTER ============ */
+
+.footer {
+   
+    width: 1440px;
+   
+    
+    background: #2E2F42;
+}
+
+.logo-logo {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: #F4F4FD;
+}
+
+
+.text-footer {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #E7E9FC;
+}
+
+
