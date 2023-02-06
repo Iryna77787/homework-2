@@ -1,9 +1,13 @@
 :root {
     --acent-color: #404BBF;
+    --primary-acent-color: #E7E9FC;
+    --secondary-acent-color: #4D5AE5;
+    --tertiary-acent-color: #F4F4FD;
     --primary-font: 'Roboto', sans-serif;
-    --secondary-font: font-family:'Raleway', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
     --primary-text-color: #2E2F42;
     --secondary-text-color: #434455;
+    --tertiary-text-color: #FFFFFF;
 }
 
 .list {
@@ -14,21 +18,35 @@
     text-decoration: none;
 }
 
+
 body {
-    font-family: var(--primary-font)
+    font-family: var(--primary-font);
 }
+
+
 
 /*============================= HEADER ====================== */
 
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 .logo {
     font-family: var(--secondary-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
@@ -40,12 +58,10 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: #4D5AE5;
+    color: var(--secondary-acent-color);
 }
 
 .menu-link {
@@ -64,7 +80,6 @@ body {
 
 .mail {
     font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -79,7 +94,6 @@ body {
 
 .phone-number {
     font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -92,50 +106,45 @@ body {
     color: var(--acent-color);
 }
 
+
 /*===================== MEIN =====================*/
 
 /*===================== HERO =====================*/
 
 .hero {
-
     width: 1440px;
-    left: 0px;
-    top: 72px;
-
-    background: #2E2F42;
+    background: var(--primary-text-color)
 }
 
 .main-title {
-    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
 
-    color: #FFFFFF;
+    color: var(--tertiary-text-color);
 }
 
 .modal-btn {
+    font-family: sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.04em;
+
     cursor: pointer;
 
-    background-color: #4D5AE5;
-    color: #FFFFFF
+    background-color: var(--secondary-acent-color);
+    color: var(--tertiary-text-color);
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
-    background-color: #404BBF;
-    color: #FFFFFF
+    background-color: var(--acent-color);
+    color: var(--tertiary-text-color);
 }
 
 /* ====================== FEATURES ================= */
 
-.features-title {
+.secondary-subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -144,8 +153,7 @@ body {
     color: var(--primary-text-color);
 }
 
-.suptitle {
-    font-weight: 400;
+.text-description {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -156,7 +164,6 @@ body {
 /* ======================= PRODUCT ================ */
 
 .suptitle {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -166,13 +173,14 @@ body {
 }
 
 .team {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--primary-text-color);
 }
+
+/*  SECTION-TEAM   */
 
 .foto-name {
     font-weight: 500;
@@ -183,8 +191,7 @@ body {
     color: var(--primary-text-color);
 }
 
-.shpere {
-    font-weight: 400;
+.sphere {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -194,42 +201,42 @@ body {
 
 /* ========= PORTFOLIO ============ */
 
+.section-team {
+    width: 1440px;
+    background: var(--tertiary-acent-color);
+}
+
+
 .filter-btn {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.04em;
 
-    color: #4D5AE5;
-    background: #F4F4FD;
+    color: var(--acent-color);
+    background: var(--tertiary-acent-color);
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
-    background-color: #404BBF;
-    color: #FFFFFF
+    background-color: var(--acent-color);
+    color: var(--tertiary-text-color);
 }
 
 .nav-title {
-
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
 
-    color: #2E2F42;
+    color: var(--primary-text-color);
 }
 
 .ofers-name {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
     color: var(--secondary-text-color);
 }
 
@@ -238,7 +245,7 @@ body {
 
 .footer {
     width: 1440px;
-    background: #2E2F42;
+    background: var(--primary-text-color);
 }
 
 .logo-logo {
@@ -246,21 +253,15 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.16;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    
-    color: #F4F4FD;
+
+    color: var(--tertiary-acent-color);
 }
 
-
 .text-footer {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #E7E9FC;
+    color: var(--primary-acent-color);
 }
-
-
